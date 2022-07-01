@@ -1,13 +1,13 @@
 import express from "express";
 import fs from "fs";
 import path from "path";
-
+import 'dotenv/config'
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 
 import App from "../src/App";
 
-const PORT = 8000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 console.log(path.resolve())
